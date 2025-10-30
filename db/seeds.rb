@@ -7,3 +7,22 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+contact = Contact.create(
+  first_name: "Fiona",
+  last_name: "Chipkin",
+  email: "fionachipkin@gmail.com",
+  phone_number: 87733366
+)
+
+i = 1
+
+20.times do
+  Contact.create({
+    first_name: "#{i}",
+    last_name: "#{i + 1}"
+})
+  i +=1
+end
+
+puts "Successfully created 20 recipes"
