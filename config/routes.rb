@@ -14,4 +14,6 @@ Rails.application.routes.draw do
 
   get "/first_contact" => "contacts#first_contact"
   get "/all_contacts" => "contacts#all_contacts"
+  get "last_contact" => "contacts#last_contact"
+  
 end
